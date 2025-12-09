@@ -1,0 +1,92 @@
+Selenium:
+Is inbuild with lot's of attribute, module and packages
+Interaction with web element:
+methods: any application ->username, password, login, forget, signup.
+
+Automation ->Testing the functionality of the application by using
+            application tool is called "Automation".
+
+web-elements:
+- anything (data) which is present in the web application called "web-element"
+- location in the web page/element user wants to interact
+
+There are two types:
+1. Web-element  ->Single element
+2. Web-elements ->Multiple elements
+
+shortcut->to see html data in the web page(inspect) ->ctl+shift+i.
+
+why/uses:
+1. To reduce the human error in the repetitive task
+2. Maintain the Accuracy and consistency
+3. sustain the market
+
+class ->attribute present in the web page
+class name: locator present in the selenium
+
+Imp: if there is any space in the locator value, the user should replace it with dot(.)
+
+To enter data: send_keys(" ") is used
+e.g: driver.find_element("","").send_keys()
+
+webdriver -> In java it is interface, and In Python it is Module
+Locator -> Finding and inspecting an element in a webpage is called "Locator".
+why Locators: Before performing any actions like clicking, selection, and entering ...etc
+               we have to find the path of element because selenium doesn't know where the
+               element present in the webpage
+
+Types of Locator:
+1. Id
+2. name
+3. class name
+4. Tag name
+5. link text
+6. partial link text
+7. css selector
+8. xpath
+
+To Find web element is a web page we have two options:
+1. web element(): To find single web element.
+2. web elements(): To find multiple web elements.
+
+Syntax: return type of this method is web element, two arguments.
+    find_element("locator_name", "locator_value")
+
+Three possibilities:
+1. It should have match with exactly one element.
+2. If the locator value matches with multiple elements then it will return first element address.
+3. If the locator value not matches with any element then it will return 'No such exception" result.
+
+"InvalidArgumentException" ->in case wrong id is is given.
+"NoSuchElementException"  ->in case wrong value is given.
+
+--------------------------------------------------------------------------
+HTML consist of three element:
+1. Tagname
+2. Attribute
+3. Text
+
+e.g: <a href:"https://www.google.com" <Google> </a>
+1.Tagname: a
+2. Attribute: href:"https://www.google.com"
+3. Text : Google.
+
+-If the locator value matches with multiple elements in that case data will enter into the first element.
+-If the locator values matches with multiple elements in that case to find out perticular element we can use find_elements()
+
+------------------------------
+verification method:
+-tile
+-pagesource
+-current URL
+
+1. verifyTitle(): checks if the title matches with the expected title.
+2. verifyTest(): checks if a specific text is present on a web page or element.
+3. verifyelementpresent(): verifies if specifc element(like, button, link, image) exist on the page.
+4. verifyelementeEnabled() confirms whether an element is enabled(usable)
+5. verifyURL():  verified whether the current URL matches the expected URl.
+6. verifyattribute(): confirms if an element's attribute has the correct value.
+
+----------------------------------------------------
+
+
